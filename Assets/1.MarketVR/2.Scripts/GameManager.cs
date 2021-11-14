@@ -11,4 +11,14 @@ public class GameManager : MonoBehaviour
         print("done");
     }
 
+    public void OnTemperatureChanged(float newTemperature)
+    {
+        print("Changed: " + newTemperature);
+    }
+
+    public void OnTemperatureSnapChanged(float newSnap)
+    {
+        print("Changed: " + newSnap);
+    }
+
 }
