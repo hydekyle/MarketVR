@@ -23,7 +23,7 @@ public class Oven : MonoBehaviour
         bakeableList.ForEach(element => element.bakedPoints += bakePotency);
     }
 
-    private void OnTriggerEnter(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("bakeable"))
         {
@@ -31,7 +31,7 @@ public class Oven : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider2D other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("bakeable"))
         {
