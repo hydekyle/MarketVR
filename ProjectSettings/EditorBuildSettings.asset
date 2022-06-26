@@ -21,13 +21,13 @@ EditorBuildSettings:
     path: Assets/Extensions/BNG Framework/Scenes/Vehicle Example.unity
     guid: d96233ee44d985d4fb8dc23a907c06eb
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4f8cd35938e8e694e8465ef852a0fb6e,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 39ce8160fdff0cc45a00ba2cf0430d86,
       type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 2ec24d39f7b5ac84aad7e5df7b4fd3ea,
       type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: ea12d6fa05153874bb5fd4d774afbcc2,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f723efa7fba974a42890f9f7282f6a31,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 524fb25c3d8758842bbf86e2c1909da6,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5bbdac6b54757ac4abd0f9504360708e,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5c1ac1230344f084aab520fb51dae151,
       type: 2}

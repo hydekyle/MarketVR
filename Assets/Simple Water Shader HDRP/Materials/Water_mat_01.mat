@@ -13,10 +13,10 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
   - _ENABLE_FOG_ON_TRANSPARENT
   - _SURFACE_TYPE_TRANSPARENT
+  - _TRANSPARENT_WRITES_MOTION_VEC
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
@@ -26,11 +26,9 @@ Material:
     MotionVector: User
     RenderType: Transparent
   disabledShaderPasses:
-  - MOTIONVECTORS
+  - RayTracingPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - RayTracingPrepass
-  - TransparentDepthPrepass
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -151,9 +149,9 @@ Material:
     m_Floats:
     - Boolean_ebdbf4f311404f5fb2cd2b6927a304c1: 0
     - Vector1_07c93c7e34df4237b5dd57255d7f857a: 0.2
-    - Vector1_3849afd7c2eb484893a68ec694cc75b3: 0.1
+    - Vector1_3849afd7c2eb484893a68ec694cc75b3: 0.01
     - Vector1_4fa7de5de5304ba799341f5b9bbbf2c0: 0.5
-    - Vector1_6f56a0970372485390c6587863c2374e: -3.5
+    - Vector1_6f56a0970372485390c6587863c2374e: -10.92
     - Vector1_7ab1e13367ff4c17b0a4403edd3d9450: 0.16
     - Vector1_a3027f23b37c4da89592d406468d7aa8: 1
     - Vector1_c0da6a80189144e5a45df6c62b281d57: 1
@@ -228,7 +226,7 @@ Material:
     - _PPDPrimitiveWidth: 1
     - _RayTracing: 0
     - _ReceivesSSR: 1
-    - _ReceivesSSRTransparent: 0
+    - _ReceivesSSRTransparent: 1
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
@@ -240,10 +238,10 @@ Material:
     - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
     - _StencilRef: 0
-    - _StencilRefDepth: 0
+    - _StencilRefDepth: 8
     - _StencilRefDistortionVec: 4
-    - _StencilRefGBuffer: 2
-    - _StencilRefMV: 32
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 8
     - _StencilWriteMaskDistortionVec: 4
@@ -259,10 +257,10 @@ Material:
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
-    - _TransparentDepthPrepassEnable: 0
+    - _TransparentDepthPrepassEnable: 1
     - _TransparentSortPriority: -1
-    - _TransparentWritingMotionVec: 0
-    - _TransparentZWrite: 0
+    - _TransparentWritingMotionVec: 1
+    - _TransparentZWrite: 1
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
@@ -271,11 +269,11 @@ Material:
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
     - Color_6a9a916e2c84442984edc20c082efe79: {r: 0, g: 0.38159987, b: 0.50980395,
         a: 0.68235296}
-    - Color_c9a840f2115c4802ba54d713194f761d: {r: 0, g: 0.033018894, b: 0.11320752,
+    - Color_c9a840f2115c4802ba54d713194f761d: {r: 0.012415453, g: 0.032412734, b: 0.084905684,
         a: 0.9882353}
     - Vector2_130994fa54a3486dacf33287c0070f7f: {r: 10, g: 10, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
